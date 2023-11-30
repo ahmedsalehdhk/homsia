@@ -1,5 +1,6 @@
-import useFetch from "../useFetch";
-import { Link } from "react-router-dom";
+import useFetch from "../hooks/useFetch"
+import { Link } from "react-router-dom"
+
 const AllProjects = () => {
   const {
     data: projects,

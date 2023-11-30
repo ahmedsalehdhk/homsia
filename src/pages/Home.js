@@ -1,7 +1,7 @@
 import FeaturedCard from "../components/FeaturedCard";
 import HeroCarousel from "../components/HeroCarousel";
 import ServicesCard from "../components/ServicesCard";
-import useFetch from "../useFetch";
+import useFetch from "../hooks/useFetch";
 import Contact from "./Contact";
 import { Link } from "react-router-dom";
 // import PracticeCard from "../components/PracticeCard";

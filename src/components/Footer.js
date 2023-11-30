@@ -1,4 +1,4 @@
-import logo from "../assets/Homsia.png";
+import logo from "../assets/logo/Homsia.png";
 
 const Footer = () => {
   return (

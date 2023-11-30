@@ -4,13 +4,16 @@
   color: #000;
   box-shadow: 0 25px 50px -12px rgb(0 0 0 / 0.25);
 }
+
 .hamburger-dark {
   background-color: #000 !important;
 }
+
 #mobile-nav {
   right: -100%;
   visibility: hidden;
 }
+
 .mobile-nav-open {
   right: 0 !important;
   visibility: visible !important;
@@ -24,30 +27,41 @@
   display: none;
   transition: all 3s ease-in;
 }
+
 .active {
   background-color: #717171;
 }
-.hero-text{
+
+.hero-text {
   animation-name: fade;
   animation-duration: 3s;
 }
+
 #hc1 {
   background-image: url("./assets/heroImages/Hero1.webp");
 }
+
 #hc2 {
   background-image: url("./assets/heroImages/creative1.webp");
 }
+
 #hc3 {
   background-image: url("./assets/heroImages/agency.webp");
-  }
+}
+
 /* Fading animation */
 .fade {
   transition: all 3s ease;
 }
 
 @keyframes fade {
-  from {opacity: .4} 
-  to {opacity: 1}
+  from {
+    opacity: .4
+  }
+
+  to {
+    opacity: 1
+  }
 }
 
 /* FEATURED */
@@ -56,28 +70,36 @@
   background-position: center;
   transition: all ease-in-out 0.3s;
 }
+
 .featured-images:hover {
   transform: scale(1.2);
 }
+
 .project-img {
   background-size: cover;
   background-position: center;
 }
+
 #fc1 {
   background-image: url("./assets/featuredImages/image1.jpg");
 }
+
 #fc2 {
   background-image: url("./assets/featuredImages/image2.jpg");
 }
+
 #fc3 {
   background-image: url("./assets/featuredImages/image3.jpg");
 }
+
 #fc4 {
   background-image: url("./assets/featuredImages/image4.jpg");
 }
+
 #fc5 {
   background-image: url("./assets/featuredImages/image5.jpg");
 }
+
 #fc6 {
   background-image: url("./assets/featuredImages/image6.jpg");
 }
@@ -86,6 +108,7 @@
 .services {
   background-color: #ebe8e2;
 }
+
 .services-card {
   -webkit-transition: all 0.3s ease-out;
   -moz-transition: all 0.3s ease-out;
@@ -93,6 +116,7 @@
   transition: all 0.3s ease-out;
   background-color: #fff;
 }
+
 .services-card:hover {
   transform: scale(1.1);
   color: white;
@@ -104,11 +128,12 @@
   -o-transition: all 0.3s ease-in;
   transition: all 0.3s ease-in;
 }
+
 /* CONTACT */
 .contact,
 .contact.h1 {
   background-color: #000;
-  background-image: url("./assets/contactBg.webp");
+  background-image: url("./assets/contactImages/contactBg.webp");
   background-position: center;
   background-size: cover;
   background-attachment: fixed;
@@ -123,11 +148,10 @@
   -o-transition: all 0.3s ease-in;
   transition: all 0.3s ease-in;
 }
+
 .submit_button {
   -webkit-transition: all 0.3s ease-out;
   -moz-transition: all 0.3s ease-out;
   -o-transition: all 0.3s ease-out;
   transition: all 0.3s ease-out;
 }
-
-

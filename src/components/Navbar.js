@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import "../App.css"
 
-import logo from "../assets/Homsia.png"
+import logo from "../assets/logo/Homsia.png"
 
 const Navbar = () => {
 

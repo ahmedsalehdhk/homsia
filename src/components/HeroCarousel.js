@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import heroTexts from "../assets/heroText";
+import heroTexts from "../srcdata/heroText";
 
 const HeroCarousel = () => {
   const [slideIndex, setSlideIndex] = useState(0);
