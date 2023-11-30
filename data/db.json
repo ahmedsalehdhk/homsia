@@ -1,0 +1,76 @@
+{
+    "projects": [
+      {
+        "title": "Homsia Paradise",
+        "body": "Why do we use it?\nIt is a long established fact that a reader will be distracted.",
+        "place": "Gulshan 1",
+        "featured": "yes",
+        "beds": 4,
+        "baths": 3,
+        "parkings": 1,
+        "space": 2000,
+        "img":"",
+        "id": 1
+      },
+      {
+        "title": "Homsia Example 2",
+        "body": "Why do we use it?\nIt is a long established fact that a reader will be distracted by the.",
+        "place": "Gulshan 1",
+        "featured": "yes",
+        "beds": 3,
+        "baths": 3,
+        "parkings": 1,
+        "space": 1550,
+        "img":"",
+        "id": 2
+      },
+      {
+        "title": "Homsia Example 3",
+        "body": "Why do we use it?\nIt is a long established fact that a reader will be distracted.",
+        "place": "Gulshan 1",
+        "featured": "no",
+        "beds": 4,
+        "baths": 3,
+        "parkings": 2,
+        "space": 2200,
+        "img":"",
+        "id": 3
+      },
+      {
+        "title": "Homsia Example 4",
+        "body": "Therefore always free from repetition, injected humour, or non-characteristic words etc.",
+        "place": "Gulshan 1",
+        "featured": "yes",
+        "beds": 5,
+        "baths": 3,
+        "parkings": 2,
+        "space": 3500,
+        "img":"",
+        "id": 4
+      },
+      {
+        "title": "Homsia Example 5",
+        "body": "Why do we use it?\nIt is a long established fact that a reader will be.",
+        "place": "Gulshan 1",
+        "featured": "no",
+        "beds": 4,
+        "baths": 2,
+        "parkings": 1,
+        "space": 2500,
+        "img":"",
+        "id": 5
+      },
+      {
+        "title": "Homsia Example 6",
+        "body": "Why do we use it?\nIt is a long established fact that a reader.",
+        "place": "Gulshan 1",
+        "featured": "yes",
+        "beds": 2,
+        "baths": 1,
+        "parkings": 0,
+        "space": 1100,
+        "img":"",
+        "id": 6
+      }
+    ]
+  }
