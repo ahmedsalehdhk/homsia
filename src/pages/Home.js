@@ -1,90 +1,77 @@
-import FeaturedCard from "../components/FeaturedCard";
+import { Link } from "react-router-dom"
+import { FaRegBuilding, FaMoneyCheckAlt, FaLightbulb, FaQuoteLeft } from "react-icons/fa";
+
+
+// components
+import FeaturedCards from "../components/FeaturedCards";
 import HeroCarousel from "../components/HeroCarousel";
-import ServicesCard from "../components/ServicesCard";
-import useFetch from "../hooks/useFetch";
 import Contact from "./Contact";
-import { Link } from "react-router-dom";
-// import PracticeCard from "../components/PracticeCard";
+
+// custom hooks
+import useFetch from "../hooks/useFetch";
 
 const Home = () => {
   const {
     data: projects,
-    isPending,
-    error,
+    // isPending,
+    // error,
   } = useFetch("http://localhost:8000/projects");
 
   return (
-    <div className="home master-container overflow-x-hidden">
+    <div className="home master-container overflow-x-hidden" id="home">
       {/* HERO SECTION */}
       <HeroCarousel />
+
       {/* FEATURED SECTION */}
-      <div className="featured px-3 sm:px-10 md:px-24 lg:px-48 py-20 bg-[#F3F3F3] min-h-fit flex items-center flex-col">
-        <div className="featured-text flex flex-col justify-center items-center mb-10">
-          <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-medium text-center capitalize mb-3">
-            our featured exclusives
-          </h1>
-          <p className="text-neutral-500 text-md text-center">
-            Searching for your ideal home or commercial property in Bangladesh
-            shouldn't be a daunting experience. That's why we're here to assist
-            you in finding the perfect property at the right price.
-          </p>
+      <div className="featured flex flex-col justify-center items-center px-5 md:px-20 lg:px-40 py-32 bg-[#f3f3f3]" id="featured">
+        <h1 className="text-4xl mb-5">Our Featured Exclusives</h1>
+        <p className="text-gray-700 font-light mb-12">Discover unparalleled real estate opportunities with our featured exclusives—crafted to elevate your property search and provide unique investment prospects.</p>
+        <div className="exclusive-cards mb-10">
+          <FeaturedCards projects={projects} />
         </div>
-        <div className="featured-cardBox flex justify-center h-11/12 mb-10">
-          <FeaturedCard project={projects} />
-        </div>
-        <Link to={`/allprojects`}><button className="submit_button text-white h-16 w-40 rounded bg-black mt-4">All Projects</button></Link>
+        <button className="bg-black hover:bg-gray-800 text-white px-8 py-4 rounded">All Projects</button>
       </div>
-      <hr className="hrmain bg-slate-400 h-2 rounded-md"></hr>
+
+      <hr className="bg-white h-5"></hr>
+
       {/* SERVICES SECTION */}
-      <div className="services h-fit w-screen flex justify-center flex-col px-3 md:px-24 lg:px-48 py-20 bg-[#F3F3F3]">
-        <div className="services_top w-full flex justify-center flex-col">
-          <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-medium text-center capitalize mb-3">
-            Our Services
-          </h1>
-          <p className="text-neutral-500 text-md text-center mb-5">
-            As a premier real estate and development company in Bangladesh, we
-            are dedicated to providing a dynamic range of services to our
-            clients. We understand the importance of your dreams and the role
-            your real estate plays in shaping your future. That's why we're your
-            trusted partner, committed to bringing your visions to life and
-            helping you create a better tomorrow through our expertise and
-            dedication.
-          </p>
-        </div>
-        <div className="serve-cards flex justify-center items-center flex-wrap gap-5 w-full">
-          <ServicesCard
-            id="card1"
-            title="Property Management"
-            des="Encompasses a comprehensive management package along with a tenancy application, ensuring a hassle-free year and allowing you to enjoy the rewards of your investment."
-          />
-          <ServicesCard
-            id="card2"
-            title="Pricing Strategy"
-            des="The conventional market practice of using 'average pricing' consistently leads to vacant overpriced units and underpriced ones failing to achieve their maximum return on investment."
-          />
-          <ServicesCard
-            id="card3"
-            title="Financial Reporting"
-            des="We promote this interactive media through various channels, including Google AdWords, Social Media, targeted newsletters, and reputable regional platforms."
-          />
-          <ServicesCard
-            id="card4"
-            title="Agency & Brokerage Services"
-            des="Homsia Properties offers Agency and Brokerage services to a diverse clientele, including landlords, investors, and government authorities."
-          />
-          <ServicesCard
-            id="card5"
-            title="Valuation & Advisory Services"
-            des="Our Valuation professionals are renowned for their expert guidance on current and future real estate and real estate-related investment values."
-          />
-          <ServicesCard
-            id="card6"
-            title="Property Market Research"
-            des="Homsia Properties' Market Research Department diligently monitors the property market, keeps up with current conditions, and identifies emerging trends."
-          />
+      <div className="services px-5 md:px-20 lg:px-40 py-32 bg-[#f3f3f3]" id="services">
+        <h1 className="text-4xl mb-12">Our Services</h1>
+        <div className="service-cards flex flex-col gap-5 lg:flex-row justify-between items-start w-full">
+          <div className='service-card flex justify-start items-start gap-5 w-full lg:w-1/3'>
+            <div className="left"><FaRegBuilding className="text-4xl"/></div>
+            <div className="right">
+              <h1 className='font-medium text-xl mb-3 whitespace-nowrap'>Land Development</h1>
+              <p className='text-gray-700 font-light text-justify'>Embark on a transformative journey with our land development expertise. Our dedicated team tailors each step, bringing your vision to life sustainably and profitably.</p>
+            </div>
+          </div>
+          <div className='service-card flex justify-start items-start gap-5 w-full lg:w-1/3'>
+            <div className="left"><FaMoneyCheckAlt className="text-4xl" /></div>
+            <div className="right">
+              <h1 className='font-medium text-xl mb-3 whitespace-nowrap'>Sell Apartments</h1>
+              <p className='text-gray-700 font-light text-justify'>Elevate your property selling experience with our specialized team. Trust us to guide you through a successful sale journey, offering a personalized approach and expert expertise.</p>
+            </div>
+          </div>
+          <div className='service-card flex justify-start items-start gap-5 w-full lg:w-1/3'>
+            <div className="left"><FaLightbulb className="text-4xl" /></div>
+            <div className="right">
+              <h1 className='font-medium text-xl mb-3 whitespace-nowrap'>Real Estate Consultancy</h1>
+              <p className='text-gray-700 font-light text-justify'>Navigate a personalized real estate journey with our consultancy service. Our dedicated team provides expert guidance, ensuring decisions align seamlessly with your goals and aspirations.</p>
+            </div>
+          </div>
+
         </div>
       </div>
-      {/* <PracticeCard/> */}
+
+      <hr className="bg-white h-5"></hr>
+
+      {/* TAGLINE */}
+      <div className="tagline flex flex-col justify-center items-center gap-2 py-32 bg-[#f3f3f3]">
+        <FaQuoteLeft className="text-4xl" />
+        <h1 className="text-3xl md:text-4xl lg:text-6xl font-medium text-[#1b1b1b] text-center">Your <span className="border-b-4 border-blue-600">Blueprint</span>  To Better Living</h1>
+      </div>
+
+      {/* CONTACT */}
       <Contact />
     </div>
   );
