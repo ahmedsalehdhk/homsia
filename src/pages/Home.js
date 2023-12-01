@@ -29,7 +29,7 @@ const Home = () => {
         <div className="exclusive-cards mb-10">
           <FeaturedCards projects={projects} />
         </div>
-        <button className="bg-black hover:bg-gray-800 text-white px-8 py-4 rounded">All Projects</button>
+        <Link to={"/projects"}><button className="bg-black hover:bg-gray-800 text-white px-8 py-4 rounded">All Projects</button></Link>
       </div>
 
       <hr className="bg-white h-5"></hr>
@@ -66,7 +66,7 @@ const Home = () => {
       <hr className="bg-white h-5"></hr>
 
       {/* TAGLINE */}
-      <div className="tagline flex flex-col justify-center items-center gap-2 py-32 bg-[#f3f3f3]">
+      <div className="tagline flex flex-col justify-center items-center gap-2 py-32 px-5 bg-[#f3f3f3]">
         <FaQuoteLeft className="text-4xl" />
         <h1 className="text-3xl md:text-4xl lg:text-6xl font-medium text-[#1b1b1b] text-center">Your <span className="border-b-4 border-blue-600">Blueprint</span>  To Better Living</h1>
       </div>

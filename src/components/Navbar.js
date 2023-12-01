@@ -22,6 +22,8 @@ const Navbar = () => {
     }
     window.addEventListener('scroll', changingNav)
 
+
+
     //view mobile menu
     let isNavOpen = false
     const handleHamburgerClick = () => {

@@ -17,15 +17,17 @@ const Footer = () => {
         </div>
         <div className="col-2 lg:w-1/5 flex lg:flex-col flex-wrap gap-2 mb-5">
           <h1 className="font-medium">Socials</h1>
-          <p className="cursor-pointer text-gray-500 hover:text-gray-300  w-fit">Facebook</p>
-          <p className="cursor-pointer text-gray-500 hover:text-gray-300 w-fit">LinkedIn</p>
-          <p className="cursor-pointer text-gray-500 hover:text-gray-300 w-fit">Instagram</p>
-          <p className="cursor-pointer text-gray-500 hover:text-gray-300 w-fit">Youtube</p>
+          <a href="https://www.facebook.com/homsiapropertiesltd"><p className="cursor-pointer text-gray-500 hover:text-gray-300 w-fit">Facebook</p></a>
+          <a href="https://www.instagram.com/explore/locations/100170635955437/homsia-properties-ltd/"><p className="cursor-pointer text-gray-500 hover:text-gray-300 w-fit">Instagram</p></a>
         </div>
         <div className="col-3 lg:w-1/5 flex flex-col gap-2">
           <h1 className="font-medium">Contact</h1>
-          <p className="cursor-pointer text-gray-500 w-fit hover:text-gray-300">01600322205, 01717-732465, 01678175401</p>
-          <p className="cursor-pointer text-gray-500 w-fit hover:text-gray-300">help@homsia.com</p>
+          <div className="contact-numbers flex flex-wrap gap-3">
+            <a href="tel:01600322205"><p className="cursor-pointer text-gray-500 w-fit hover:text-gray-300">01600322205</p></a>
+            <a href="tel:01717732465"><p className="cursor-pointer text-gray-500 w-fit hover:text-gray-300">01717732465</p></a>
+            <a href="tel:01678175401"><p className="cursor-pointer text-gray-500 w-fit hover:text-gray-300">01678175401</p></a>
+          </div>
+          <p className="cursor-pointer text-gray-500 w-fit hover:text-gray-300">help@homsia.com FIX ME</p>
           <p className="cursor-pointer text-gray-500 w-fit hover:text-gray-300">A3, House 109, Mosjid Road, Banani DOHS, Dhaka</p>
         </div>
       </div>

@@ -30,7 +30,7 @@ const HeroCarousel = () => {
   return (
     <div className="hero-main relative h-screen w-screen text-left text-white">
       <div className="hero h-full w-full" id="hc1">
-        <div className="overlay-hero bg-black/50 h-full w-full flex flex-col justify-center items-center px-5 md:px-20 lg:px-40">
+        <div className="overlay-hero bg-black/50 h-full w-full flex flex-col md:justify-center items-center pt-40 md:pt-0 px-5 md:px-20 lg:px-40">
           <h2 className="hero-text text-3xl lg:text-5xl font-medium mb-5 self-start">
             {heroTexts.text1.header}
           </h2>
@@ -40,7 +40,7 @@ const HeroCarousel = () => {
         </div>
       </div>
       <div className="hero h-full w-full" id="hc2">
-        <div className="overlay-hero bg-black/50 h-full w-full flex flex-col justify-center items-center px-5 md:px-20 lg:px-40">
+        <div className="overlay-hero bg-black/50 h-full w-full flex flex-col md:justify-center items-center pt-40 md:pt-0 px-5 md:px-20 lg:px-40">
           <h2 className="hero-text text-3xl lg:text-5xl font-medium mb-5 self-start">
             {heroTexts.text2.header}
           </h2>
@@ -50,7 +50,7 @@ const HeroCarousel = () => {
         </div>
       </div>
       <div className="hero h-full w-full" id="hc3">
-        <div className="overlay-hero bg-black/50 h-full w-full flex flex-col justify-center items-center px-5 md:px-20 lg:px-40">
+        <div className="overlay-hero bg-black/50 h-full w-full flex flex-col md:justify-center items-center pt-40 md:pt-0 px-5 md:px-20 lg:px-40">
           <h2 className="hero-text text-3xl lg:text-5xl font-medium mb-5 self-start">
             {heroTexts.text3.header}
           </h2>
@@ -59,7 +59,7 @@ const HeroCarousel = () => {
           </h4>
         </div>
       </div>
-      <a href="#featured"><div className="indicater absolute top-[85%] left-[48%] border rounded-full px-4 py-8 animate-bounce"><FaArrowDown /></div></a>
+      <a href="#featured"><div className="indicater absolute top-[70%] lg:top-[85%] left-0 right-0 mx-auto border rounded-full px-4 py-8 animate-bounce w-fit"><FaArrowDown /></div></a>
     </div>
   );
 };

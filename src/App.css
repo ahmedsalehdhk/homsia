@@ -23,8 +23,6 @@
 .hero {
   background-size: cover;
   background-position: center;
-  background-attachment: fixed;
-  display: none;
   transition: all 3s ease-in;
 }
 
@@ -109,13 +107,11 @@
 }
 
 /* CONTACT */
-.contact,
-.contact.h1 {
+.contact {
   background-color: #000;
   background-image: url("./assets/contactImages/contactBg.webp");
   background-position: center;
   background-size: cover;
-  background-attachment: fixed;
 }
 
 .submit_button:hover {
