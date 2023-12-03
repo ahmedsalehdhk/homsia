@@ -34,6 +34,10 @@
   animation-name: fade;
   animation-duration: 3s;
 }
+#header{
+  font-family: "Merriweather";
+  font-weight: 700;
+}
 
 #hc1 {
   background-image: url("./assets/heroImages/Hero1.webp");
@@ -46,6 +50,8 @@
 #hc3 {
   background-image: url("./assets/heroImages/agency.webp");
 }
+
+
 
 /* Fading animation */
 .fade {

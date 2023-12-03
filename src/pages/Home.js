@@ -24,7 +24,7 @@ const Home = () => {
 
       {/* FEATURED SECTION */}
       <div className="featured flex flex-col justify-center items-center px-5 md:px-20 lg:px-40 py-32 bg-[#f3f3f3]" id="featured">
-        <h1 className="text-4xl mb-5">Our Featured Exclusives</h1>
+        <h1 className="text-5xl mb-5" id="header">Our Featured Exclusives</h1>
         <p className="text-gray-700 font-light mb-12">Discover unparalleled real estate opportunities with our featured exclusives—crafted to elevate your property search and provide unique investment prospects.</p>
         <div className="exclusive-cards mb-10">
           <FeaturedCards projects={projects} />
@@ -36,7 +36,7 @@ const Home = () => {
 
       {/* SERVICES SECTION */}
       <div className="services px-5 md:px-20 lg:px-40 py-32 bg-[#f3f3f3]" id="services">
-        <h1 className="text-4xl mb-12">Our Services</h1>
+        <h1 className="text-5xl mb-12" id="header">Our Services</h1>
         <div className="service-cards flex flex-col gap-5 lg:flex-row justify-between items-start w-full">
           <div className='service-card flex justify-start items-start gap-5 w-full lg:w-1/3'>
             <div className="left"><FaRegBuilding className="text-4xl"/></div>
@@ -68,7 +68,7 @@ const Home = () => {
       {/* TAGLINE */}
       <div className="tagline flex flex-col justify-center items-center gap-2 py-32 px-5 bg-[#f3f3f3]">
         <FaQuoteLeft className="text-4xl" />
-        <h1 className="text-3xl md:text-4xl lg:text-6xl font-medium text-[#1b1b1b] text-center">Your <span className="border-b-4 border-blue-600">Blueprint</span>  To Better Living</h1>
+        <h1 className="text-3xl md:text-4xl lg:text-6xl font-medium text-[#1b1b1b] text-center" id="header">Your <span className="border-b-4 border-blue-600">Blueprint</span>  To Better Living</h1>
       </div>
 
       {/* CONTACT */}

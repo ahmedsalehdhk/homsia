@@ -47,17 +47,17 @@ const Navbar = () => {
         <nav className="bg-transparent text-white flex justify-between items-center px-6 md:px-10 py-6 fixed w-screen duration-700 z-[100]" id="nav">
             <Link to="/"><img className="logo h-10 w-24 min-w-[96px]" src={logo} alt="homesia"/></Link>
             <ul className="nav-links gap-5 hidden md:flex">
-                <li className="capitalize font-medium"><a href="#home">home</a></li>
-                <li className="capitalize font-medium"><a href="#featured">featured</a></li>
-                <li className="capitalize font-medium"><a href="#services">services</a></li>
-                <li className="capitalize font-medium"><a href="#contact">contact</a></li>
+                <li className="capitalize font-medium" id="header"><a href="#home">home</a></li>
+                <li className="capitalize font-medium" id="header"><a href="#featured">featured</a></li>
+                <li className="capitalize font-medium" id="header"><a href="#services">services</a></li>
+                <li className="capitalize font-medium" id="header"><a href="#contact">contact</a></li>
             </ul>
             <div className="hamburger cursor-pointer md:hidden z-50" onClick={handleHamburgerClick}>
                 <div className="line bg-white h-0.5 w-7 mb-1 duration-500" id="line1"></div>
                 <div className="line bg-white h-0.5 w-7 mb-1 duration-500" id="line2"></div>
             </div>
             <div className="mobile-nav px-10 flex justify-end items-center md:hidden absolute top-0 bg-white text-black text-xl h-screen w-4/5 duration-500 shadow-xl" id="mobile-nav">
-                <ul className="nav-links gap-10 flex flex-col md:hidden text-right">
+                <ul className="nav-links gap-10 flex flex-col md:hidden text-right" id="header">
                     <li className="capitalize font-medium"><a onClick={handleHamburgerClick} href="#home">home</a></li>
                     <li className="capitalize font-medium"><a onClick={handleHamburgerClick} href="#featured">featured</a></li>
                     <li className="capitalize font-medium"><a onClick={handleHamburgerClick} href="#services">services</a></li>
