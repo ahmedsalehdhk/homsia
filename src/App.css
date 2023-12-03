@@ -51,8 +51,6 @@
   background-image: url("./assets/heroImages/agency.webp");
 }
 
-
-
 /* Fading animation */
 .fade {
   transition: all 3s ease;
