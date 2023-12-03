@@ -34,7 +34,7 @@
   animation-name: fade;
   animation-duration: 3s;
 }
-#header{
+.font-merriweather{
   font-family: "Merriweather";
   font-weight: 700;
 }

@@ -31,7 +31,7 @@ const HeroCarousel = () => {
     <div className="hero-main relative h-screen w-screen text-left text-white overflow-y-hidden">
       <div className="hero h-full w-full" id="hc1">
         <div className="overlay-hero bg-black/50 h-full w-full flex flex-col md:justify-center items-center pt-40 md:pt-0 px-5 md:px-20 lg:px-40">
-          <h2 className="hero-text text-3xl lg:text-5xl font-medium mb-5 self-start" id="header">
+          <h2 className="hero-text text-3xl lg:text-5xl font-medium mb-5 self-start font-merriweather" id="header">
             {heroTexts.text1.header}
           </h2>
           <h4 className="hero-text text-lg md:text-justify">
@@ -41,7 +41,7 @@ const HeroCarousel = () => {
       </div>
       <div className="hero h-full w-full" id="hc2">
         <div className="overlay-hero bg-black/50 h-full w-full flex flex-col md:justify-center items-center pt-40 md:pt-0 px-5 md:px-20 lg:px-40">
-          <h2 className="hero-text text-3xl lg:text-5xl font-medium mb-5 self-start" id="header">
+          <h2 className="hero-text text-3xl lg:text-5xl font-medium mb-5 self-start font-merriweather" id="header">
             {heroTexts.text2.header}
           </h2>
           <h4 className="hero-text text-lg md:text-justify">
@@ -51,7 +51,7 @@ const HeroCarousel = () => {
       </div>
       <div className="hero h-full w-full" id="hc3">
         <div className="overlay-hero bg-black/50 h-full w-full flex flex-col md:justify-center items-center pt-40 md:pt-0 px-5 md:px-20 lg:px-40">
-          <h2 className="hero-text text-3xl lg:text-5xl font-medium mb-5 self-start" id="header">
+          <h2 className="hero-text text-3xl lg:text-5xl font-medium mb-5 self-start font-merriweather" id="header">
             {heroTexts.text3.header}
           </h2>
           <h4 className="hero-text text-lg md:text-justify" id="hero-footer">
