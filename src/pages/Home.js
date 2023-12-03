@@ -1,14 +1,14 @@
 import { Link } from "react-router-dom"
 import { FaRegBuilding, FaMoneyCheckAlt, FaLightbulb, FaQuoteLeft } from "react-icons/fa";
 
-
 // components
-import FeaturedCards from "../components/FeaturedCards";
 import HeroCarousel from "../components/HeroCarousel";
+import ProjectCard from "../components/ProjectCard";
 import Contact from "./Contact";
 
 // custom hooks
 import useFetch from "../hooks/useFetch";
+
 
 const Home = () => {
   const {
@@ -26,8 +26,15 @@ const Home = () => {
       <div className="featured flex flex-col justify-center items-center px-5 md:px-20 lg:px-40 py-32 bg-[#f3f3f3]" id="featured">
         <h1 className="text-5xl mb-5" id="header">Our Featured Exclusives</h1>
         <p className="text-gray-700 font-light mb-12">Discover unparalleled real estate opportunities with our featured exclusives—crafted to elevate your property search and provide unique investment prospects.</p>
-        <div className="exclusive-cards mb-10">
-          <FeaturedCards projects={projects} />
+        <div className="featured-cards flex justify-center flex-wrap gap-5 mb-10">
+          {projects && projects.map((project) => {
+              if(project.featured === true){
+                return (
+                  <ProjectCard data={project}/>
+                )
+              }
+            })
+          }
         </div>
         <Link to={"/projects"}><button className="bg-black hover:bg-gray-800 text-white px-8 py-4 rounded">All Projects</button></Link>
       </div>
