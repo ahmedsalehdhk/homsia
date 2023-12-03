@@ -1,73 +1,65 @@
 {
   "projects": [
     {
-      "id": 0,
-      "title": "Homsia Paradise 1",
-      "address": "Gulshan 1",
-      "featured": false,
-      "bedrooms": 3,
-      "bathrooms": 2,
-      "parkings": 1,
-      "sft": 2000,
-      "status": "SOLD"
-    },
-    {
       "id": 1,
-      "title": "Homsia Paradise 2",
-      "address": "Gulshan 1",
-      "featured": false,
+      "title": "Homsia Paradise 1",
+      "address": "Munchkin Land",
+      "areacode": "mun",
+      "featured": true,
       "bedrooms": 3,
       "bathrooms": 2,
       "parkings": 1,
-      "sft": 2000,
-      "status": "SOLD"
+      "sft": 2200,
+      "status": "AVAILABLE",
+      "image": [
+        "src/assets/featuredImages/image1.jpg"
+      ]
     },
     {
       "id": 2,
-      "title": "Homsia Paradise 3",
-      "address": "Gulshan 1",
-      "featured": false,
+      "title": "Homsia Paradise 2",
+      "address": "Disney World",
+      "areacode": "dis",
+      "featured": true,
       "bedrooms": 3,
       "bathrooms": 2,
       "parkings": 1,
-      "sft": 2000,
-      "status": "SOLD"
+      "sft": 2200,
+      "status": "AVAILABLE",
+      "image": [
+        "src/assets/featuredImages/image1.jpg"
+      ]
     },
     {
       "id": 3,
-      "title": "Homsia Paradise 4",
-      "address": "Gulshan 1",
-      "featured": false,
+      "title": "Homsia Paradise 1",
+      "address": "Universal Studio",
+      "areacode": "uni",
+      "featured": true,
       "bedrooms": 3,
       "bathrooms": 2,
       "parkings": 1,
-      "sft": 2000,
-      "status": "SOLD"
+      "sft": 2200,
+      "status": "SOLD",
+      "image": [
+        "src/assets/featuredImages/image1.jpg"
+      ]
     },
     {
       "id": 4,
-      "title": "Homsia Paradise 5",
-      "address": "Gulshan 1",
+      "title": "Homsia Paradise 1",
+      "address": "Sylhet",
+      "areacode": "syl",
       "featured": false,
       "bedrooms": 3,
       "bathrooms": 2,
       "parkings": 1,
-      "sft": 2000,
-      "status": "SOLD"
-    },
-    {
-      "id": 5,
-      "title": "Homsia Paradise 6",
-      "address": "Gulshan 1",
-      "featured": false,
-      "bedrooms": 3,
-      "bathrooms": 2,
-      "parkings": 1,
-      "sft": 2000,
-      "status": "SOLD"
+      "sft": 2200,
+      "status": "AVAILABLE",
+      "image": [
+        "src/assets/featuredImages/image1.jpg"
+      ]
     }
-    
-    
   ]
 }
   
