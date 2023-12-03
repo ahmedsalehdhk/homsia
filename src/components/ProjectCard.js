@@ -6,8 +6,8 @@ export default function ProjectCard(props) {
   return (
       <div className="project-card bg-white w-fit min-w-fit h-fit overflow-hidden">
         <div className="image-container relative h-72 w-full overflow-hidden">
-          <div className="image h-full w-full" id={`${props.data.areacode}${props.data.id}`}></div>
-          <p className='absolute top-4 right-4 bg-black/75 text-white text-xs px-2 py-1 rounded'>{props.data.status}</p>
+          <div className="image h-full w-full" style={{background: `url(${props.data.image[0]})`}} id={`${props.data.areacode}${props.data.id}`}></div>
+          <p className='absolute top-4 right-4 bg-black/75 text-white text-xs px-2 py-1 rounded uppercase'>{props.data.status}</p>
         </div>
         <div className="text-container p-5">
           <h1 className='font-medium text-lg'>{props.data.title}</h1>
