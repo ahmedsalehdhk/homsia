@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom';
 
 import { FaBed, FaShower, FaCar, FaRuler } from "react-icons/fa";
 
@@ -19,7 +20,9 @@ export default function ProjectCard(props) {
               <p className='flex justify-center items-center gap-1'>{props.data.parkings}<FaCar /></p>
               <p className='flex justify-center items-center gap-1 whitespace-nowrap'>{props.data.sft} sft<FaRuler /></p>
             </div>
-            <button className='bg-black hover:bg-gray-800 text-white py-1 px-2 rounded'>Details</button>
+            <Link to={`/project/${props.data.id}`} key={props.data.id}>
+              <button className='bg-black hover:bg-gray-800 text-white py-1 px-2 rounded'>Details</button>
+              </Link>
           </div>
         </div>
       </div>
