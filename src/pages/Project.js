@@ -1,5 +1,8 @@
+import { useState } from "react";
+// import { useEffect } from "react";
 import { useParams } from "react-router-dom";
 import useFetch from "../hooks/useFetch";
+
 
 const Project = () => {
   const { id } = useParams();
@@ -8,9 +11,28 @@ const Project = () => {
     error,
     isPending,
   } = useFetch("http://localhost:8000/projects/" + id);
+ 
+  const [thumbnailColor, setThumbnailColor] = useState(""); // State to store thumbnail color
+
+  // useEffect(() => {
+  //   if (projects) {
+  //     // Ensure projects data is available before rendering
+  //     // Additional initialization or side effects can be performed here
+  //   }
+  // }, [projects]);
+
+  const changeThumbnail = (event) => {
+    const clickedDiv = event.target;
+    const color = window.getComputedStyle(clickedDiv).getPropertyValue("background-color");
+    setThumbnailColor(color); // Update state with clicked thumbnail color
+  };
   if (!projects) {
     return console.log("Projects loading");
   }
+  // if (!projects) {
+  //   return <div>Loading...</div>; // Return a loading state while projects are fetching
+  // }
+
   return (
     <div className="projects bg-white lg:px-20 sm:px-10 px-2 lg:py-40 sm:py-20 py-10 w-screen sm:h-[130vh] h-[150vh] flex flex-col-reverse lg:flex-row">
       <div className="projects-infoleft flex w-full lg:w-7/12 justify-start flex-col h-3/6 lg:h-full lg:py-32 lg:mt-0 mt-8 md:px-20 sm:px-10 px-5 border-l-4 rounded border-slate-700">
@@ -29,13 +51,14 @@ const Project = () => {
         <div
           className="project-img lg:h-4/6 lg:border-2 w-full h-4/6 bg-slate-400 rounded border-slate-700"
           id={`fc${projects.id}`}
+          style={{ backgroundColor: thumbnailColor }}
         ></div>
         <div className="picture-boxes lg:h-1/6 h-1/6 flex flex-row md:p-4 justify-around">
 
-          <div className="md:h-16 w-16 h-full bg-black cursor-pointer rounded-sm md:gap-0 gap-2"></div>
-          <div className="md:h-16 w-16 h-full bg-black cursor-pointer rounded-sm md:gap-0 gap-2"></div>
-          <div className="md:h-16 w-16 h-full bg-black cursor-pointer rounded-sm md:gap-0 gap-2"></div>
-          <div className="md:h-16 w-16 h-full bg-black cursor-pointer rounded-sm md:gap-0 gap-2"></div>
+          <div className="md:h-16 w-16 h-full border-2 bg-slate-700 border-slate-700 cursor-pointer rounded-sm md:gap-0 gap-2" onClick={changeThumbnail} id="1"></div>
+          <div className="md:h-16 w-16 h-full bg-black cursor-pointer rounded-sm md:gap-0 gap-2" onClick={changeThumbnail} id="2"></div>
+          <div className="md:h-16 w-16 h-full border-2 bg-slate-700 border-slate-700  cursor-pointer rounded-sm md:gap-0 gap-2" onClick={changeThumbnail} id="3"></div>
+          <div className="md:h-16 w-16 h-full bg-black cursor-pointer rounded-sm md:gap-0 gap-2" onClick={changeThumbnail} id="4"></div>
 
         </div>
         <div className="project-attributes h-1/6 flex flex-row justify-around py-4">
