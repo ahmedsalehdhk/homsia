@@ -45,9 +45,9 @@ const Home = () => {
       <div className="services px-5 md:px-20 lg:px-40 py-32 bg-[#f3f3f3]" id="services">
         <h1 className="text-5xl mb-12 font-merriweather" id="header">Our Services</h1>
         <div className="service-cards flex flex-col gap-5 lg:flex-row justify-between items-start w-full">
-          <div className='service-card flex justify-start items-start gap-5 w-full lg:w-1/3'>
-            <div className="left"><FaRegBuilding className="text-4xl"/></div>
-            <div className="right">
+          <div className='service-card flex flex-col justify-start items-start w-full lg:w-1/3'>
+            <div className="title flex gap-3">
+            <FaRegBuilding className="text-2xl" />
               <h1 className='font-medium text-xl mb-3 whitespace-nowrap'>Land Development</h1>
             </div>
             <p className='text-gray-700 font-light text-justify'>Embark on a transformative journey with our land development expertise. Our dedicated team tailors each step, bringing your vision to life sustainably and profitably.</p>

@@ -12,8 +12,8 @@
       "sft": 2200,
       "description": "Something like this",
       "status": "available",
-      "image": [
-        "../assets/featuredImages/image1.jpg"
+      "images": [
+        "src/assets/featuredImages/image1.jpg"
       ]
     },
     {
@@ -28,7 +28,7 @@
       "sft": 2200,
       "description": "Something like this",
       "status": "available",
-      "image": [
+      "images": [
         "src/assets/featuredImages/image1.jpg"
       ]
     },
@@ -44,7 +44,7 @@
       "sft": 2200,
       "description": "Something like this",
       "status": "sold",
-      "image": [
+      "images": [
         "src/assets/featuredImages/image1.jpg"
       ]
     },
@@ -60,7 +60,7 @@
       "sft": 2200,
       "description": "Something like this",
       "status": "AVAILABLE",
-      "image": [
+      "images": [
         "src/assets/featuredImages/image1.jpg"
       ]
     }
