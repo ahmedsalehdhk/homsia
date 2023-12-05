@@ -11,8 +11,8 @@
       "parkings": 1,
       "sft": 2200,
       "status": "available",
-      "image": [
-        "../assets/featuredImages/image1.jpg"
+      "images": [
+        "src/assets/featuredImages/image1.jpg"
       ]
     },
     {
@@ -26,7 +26,7 @@
       "parkings": 1,
       "sft": 2200,
       "status": "available",
-      "image": [
+      "images": [
         "src/assets/featuredImages/image1.jpg"
       ]
     },
@@ -41,7 +41,7 @@
       "parkings": 1,
       "sft": 2200,
       "status": "sold",
-      "image": [
+      "images": [
         "src/assets/featuredImages/image1.jpg"
       ]
     },
@@ -56,7 +56,7 @@
       "parkings": 1,
       "sft": 2200,
       "status": "AVAILABLE",
-      "image": [
+      "images": [
         "src/assets/featuredImages/image1.jpg"
       ]
     }
