@@ -39,16 +39,16 @@ const Project = () => {
       </div>
       <div className="projects-inforight lg:border-0 border-slate-700 lg:w-5/12 rounded-md w-full md:h-full h-1/2 md:py-0 py-4">
         <div
-          className="project-img lg:h-4/6 lg:border-2 w-full h-4/6 bg-slate-400 rounded border-slate-700"
+          className="project-img lg:h-4/6 lg:border-2 w-full h-4/6 bg-cyan-900 rounded border-slate-700"
           id={`fc${projects.id}`}
           style={{ backgroundColor: thumbnailColor }}
         ></div>
         <div className="picture-boxes lg:h-1/6 h-1/6 flex flex-row md:p-4 justify-around">
 
-          <div className="md:h-16 w-16 h-full border-2 bg-slate-700 border-slate-700 cursor-pointer rounded-sm md:gap-0 gap-2" onClick={changeThumbnail} id="1"></div>
-          <div className="md:h-16 w-16 h-full bg-black cursor-pointer rounded-sm md:gap-0 gap-2" onClick={changeThumbnail} id="2"></div>
-          <div className="md:h-16 w-16 h-full border-2 bg-slate-700 border-slate-700  cursor-pointer rounded-sm md:gap-0 gap-2" onClick={changeThumbnail} id="3"></div>
-          <div className="md:h-16 w-16 h-full bg-black cursor-pointer rounded-sm md:gap-0 gap-2" onClick={changeThumbnail} id="4"></div>
+          <div className="md:h-16 w-16 h-full border-2 bg-cyan-900 border-slate-700 cursor-pointer rounded-sm md:gap-0 gap-2" onClick={changeThumbnail} id="1"></div>
+          <div className="md:h-16 w-16 h-full bg-orange-800 cursor-pointer rounded-sm md:gap-0 gap-2" onClick={changeThumbnail} id="2"></div>
+          <div className="md:h-16 w-16 h-full border-2 bg-red-800 border-slate-700  cursor-pointer rounded-sm md:gap-0 gap-2" onClick={changeThumbnail} id="3"></div>
+          <div className="md:h-16 w-16 h-full bg-pink-800 cursor-pointer rounded-sm md:gap-0 gap-2" onClick={changeThumbnail} id="4"></div>
 
         </div>
         <div className="project-attributes h-1/6 flex flex-row justify-around py-4">
