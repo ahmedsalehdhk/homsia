@@ -137,22 +137,83 @@
 
 /* ALL CARD IMAGES */
 
-.image {
+.image, .project-img {
   background-size: cover;
   background-position: center;
-  transition: all ease-in-out 0.2s;
+  transition: all ease-in-out 0.3s;
 }
-
+.projects-inforight{
+  /* background-color: blanchedalmond; */
+}
 .image:hover{
   transform: scale(1.1);
 }
 
-#mun1{
+.thumbnail-box{
+  background-size: cover;
+  background-position: center;
+}
+#mun1main{
   background-image: url("./assets/featuredImages/image1.jpg");
 }
-#dis2{
+#mun11{
+  background-image: url("./assets/featuredImages/image1.jpg");
+}
+#mun12{
   background-image: url("./assets/featuredImages/image2.jpg");
 }
-#uni3{
+#mun13{
   background-image: url("./assets/featuredImages/image3.jpg");
+}
+#mun14{
+  background-image: url("./assets/featuredImages/image4.jpg");
+}
+
+#dis2main{
+  background-image: url("./assets/featuredImages/image2.jpg");
+}
+#dis21{
+  background-image: url("./assets/featuredImages/image2.jpg");
+}
+#dis22{
+  background-image: url("./assets/featuredImages/image1.jpg");
+}
+#dis23{
+  background-image: url("./assets/featuredImages/image3.jpg");
+}
+#dis24{
+  background-image: url("./assets/featuredImages/image4.jpg");
+}
+
+#uni3main{
+  background-image: url("./assets/featuredImages/image5.jpg");
+}
+#uni31{
+  background-image: url("./assets/featuredImages/image5.jpg");
+}
+#uni32{
+  background-image: url("./assets/featuredImages/image2.jpg");
+}
+#uni33{
+  background-image: url("./assets/featuredImages/image3.jpg");
+}
+#uni34{
+  background-image: url("./assets/featuredImages/image4.jpg");
+}
+
+#syl4main{
+  background-image: url("./assets/featuredImages/image6.jpg");
+}
+
+#syl41{
+  background-image: url("./assets/featuredImages/image6.jpg");
+}
+#syl42{
+  background-image: url("./assets/featuredImages/image2.jpg");
+}
+#syl43{
+  background-image: url("./assets/featuredImages/image3.jpg");
+}
+#syl44{
+  background-image: url("./assets/featuredImages/image4.jpg");
 }

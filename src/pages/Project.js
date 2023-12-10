@@ -2,7 +2,9 @@ import { useState } from "react";
 // import { useEffect } from "react";
 import { useParams } from "react-router-dom";
 import useFetch from "../hooks/useFetch";
+import { useEffect } from "react";
 import { FaBed, FaShower, FaCar, FaRuler } from "react-icons/fa";
+import { Link } from "react-router-dom";
 
 const Project = () => {
   const { id } = useParams();
@@ -12,19 +14,32 @@ const Project = () => {
     isPending,
   } = useFetch("http://localhost:8000/projects/" + id);
  
-  const [thumbnailColor, setThumbnailColor] = useState(""); // State to store thumbnail color
+  // const [thumbnailColor, setThumbnailColor] = useState(""); // State to store thumbnail color
+  // const [imageUrl, setImageUrl] = useState('');
+  // const imageName = projects.images[0]; // Assuming there's only one image URL per project
+
 
   const changeThumbnail = (event) => {
-    const clickedDiv = event.target;
-    const color = window.getComputedStyle(clickedDiv).getPropertyValue("background-color");
-    setThumbnailColor(color); // Update state with clicked thumbnail color
+    const clickedThumbnail = event.target;
+    const projectImg = document.getElementById(`${projects.areacode}${projects.id}main`);
+
+    if (projectImg) {
+      const backgroundImage = window.getComputedStyle(clickedThumbnail).getPropertyValue('background-image');
+      projectImg.style.backgroundImage = backgroundImage;
+    }
   };
-  if (!projects) {
-    return console.log("Projects loading");
+
+  if (isPending) {
+    return console.log("Loading");
+  }
+
+  if (error) {
+    return console.log(error);
   }
 
   return (
-    <div className="projects bg-white lg:px-20 sm:px-10 px-2 lg:py-40 sm:py-20 py-10 w-screen sm:h-[130vh] h-[150vh] flex flex-col-reverse lg:flex-row">
+    <div className="projects w-screen sm:h-[130vh] h-[200vh] flex flex-col justify-center items-center lg:py-20 sm:py-10 py-5">
+    <div className="projects-screen bg-white lg:px-20 sm:px-10 px-2 lg:py-20 sm:py-10 py-5 w-screen sm:h-[130vh] h-[150vh] flex flex-col-reverse lg:flex-row">
       <div className="projects-infoleft flex w-full lg:w-7/12 justify-start flex-col h-3/6 lg:h-full lg:py-32 lg:mt-0 mt-8 md:px-20 sm:px-10 px-5 border-l-4 rounded border-slate-700">
         <h1 className="text-2xl font-bold pt-10 text-slate-50 font-merriweather">
           {projects.title}
@@ -37,18 +52,20 @@ const Project = () => {
           {projects.description}
         </h1>
       </div>
-      <div className="projects-inforight lg:border-0 border-slate-700 lg:w-5/12 rounded-md w-full md:h-full h-1/2 md:py-0 py-4">
-        <div
-          className="project-img lg:h-4/6 lg:border-2 w-full h-4/6 bg-cyan-900 rounded border-slate-700"
-          id={`fc${projects.id}`}
-          style={{ backgroundColor: thumbnailColor }}
+      <div className="projects-inforight lg:border-0 border-slate-700 lg:w-5/12 rounded-md w-full md:h-full h-1/2 md:py-0 py-4 bg-gray-100">
+      <div
+          className="project-img lg:h-4/6 lg:border-2 w-full h-4/6 rounded border-slate-700"
+          id={`${projects.areacode}${projects.id}main`}
+          style={{
+            backgroundSize: 'cover',
+          }}
         ></div>
         <div className="picture-boxes lg:h-1/6 h-1/6 flex flex-row md:p-4 justify-around">
 
-          <div className="md:h-16 w-16 h-full border-2 bg-cyan-900 border-slate-700 cursor-pointer rounded-sm md:gap-0 gap-2" onClick={changeThumbnail} id="1"></div>
-          <div className="md:h-16 w-16 h-full bg-orange-800 cursor-pointer rounded-sm md:gap-0 gap-2" onClick={changeThumbnail} id="2"></div>
-          <div className="md:h-16 w-16 h-full border-2 bg-red-800 border-slate-700  cursor-pointer rounded-sm md:gap-0 gap-2" onClick={changeThumbnail} id="3"></div>
-          <div className="md:h-16 w-16 h-full bg-pink-800 cursor-pointer rounded-sm md:gap-0 gap-2" onClick={changeThumbnail} id="4"></div>
+          <div className="thumbnail-box md:h-16 w-16 h-full border-2 bg-cyan-900 border-slate-700 cursor-pointer rounded-sm md:gap-0 gap-2" onClick={changeThumbnail} id={`${projects.areacode}${projects.id}1`}></div>
+          <div className="thumbnail-box md:h-16 w-16 h-full bg-orange-800 cursor-pointer rounded-sm md:gap-0 gap-2" onClick={changeThumbnail} id={`${projects.areacode}${projects.id}2`}></div>
+          <div className="thumbnail-box md:h-16 w-16 h-full border-2 bg-red-800 border-slate-700  cursor-pointer rounded-sm md:gap-0 gap-2" onClick={changeThumbnail} id={`${projects.areacode}${projects.id}3`}></div>
+          <div className="thumbnail-box md:h-16 w-16 h-full bg-pink-800 cursor-pointer rounded-sm md:gap-0 gap-2" onClick={changeThumbnail} id={`${projects.areacode}${projects.id}4`}></div>
 
         </div>
         <div className="project-attributes h-1/6 flex flex-row justify-around py-4">
@@ -82,6 +99,10 @@ const Project = () => {
           </div>
         </div>
       </div>
+    </div>
+    <div>
+    <Link to={"/projects"}><button className="bg-black hover:bg-gray-800 text-white px-8 py-4 rounded">All Projects</button></Link>
+    </div>
     </div>
   );
 };

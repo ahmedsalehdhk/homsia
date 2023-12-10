@@ -17,7 +17,7 @@ const Projects = () => {
       <div className="projects-text flex flex-col justify-center items-start mb-10">
         <h1 className="text-4xl mb-8 font-merriweather">Our Projects</h1>
       </div>
-      <div className="projects-container flex justify-start items-center flex-wrap gap-3 flex-row">
+      <div className="projects-container flex 2xl:justify-start justify-center items-center flex-wrap gap-3 flex-row">
         {projects.map((project) => {
           return(<ProjectCard data={project}/>)
         })}
