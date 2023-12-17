@@ -10,9 +10,10 @@
       "bathrooms": 2,
       "parkings": 1,
       "sft": 2200,
+      "description": "Something like this",
       "status": "available",
       "images": [
-        "src/assets/featuredImages/image1.jpg"
+        "image1.jpg"
       ]
     },
     {
@@ -25,9 +26,10 @@
       "bathrooms": 2,
       "parkings": 1,
       "sft": 2200,
+      "description": "Something like this",
       "status": "available",
       "images": [
-        "src/assets/featuredImages/image1.jpg"
+        "image1.jpg"
       ]
     },
     {
@@ -40,9 +42,10 @@
       "bathrooms": 2,
       "parkings": 1,
       "sft": 2200,
+      "description": "Something like this",
       "status": "sold",
       "images": [
-        "src/assets/featuredImages/image1.jpg"
+        "image1.jpg"
       ]
     },
     {
@@ -55,9 +58,10 @@
       "bathrooms": 2,
       "parkings": 1,
       "sft": 2200,
+      "description": "Something like this",
       "status": "AVAILABLE",
       "images": [
-        "src/assets/featuredImages/image1.jpg"
+        "image1.jpg"
       ]
     }
   ]

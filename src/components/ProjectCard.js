@@ -1,15 +1,18 @@
-import React from 'react'
+import React, { useState } from 'react'
+import { Link } from 'react-router-dom';
 
 import { FaBed, FaShower, FaCar, FaRuler } from "react-icons/fa";
 
 export default function ProjectCard(props) {
 
-  console.log(props.data.images)
 
   return (
       <div className="project-card bg-white w-fit min-w-fit h-fit overflow-hidden">
         <div className="image-container relative h-72 w-full overflow-hidden">
-          <div className="image h-full w-full"></div>
+          <div
+            className="image h-full w-full"
+            id={`${props.data.areacode}${props.data.id}1`}
+          ></div>
           <p className='absolute top-4 right-4 bg-black/75 text-white text-xs px-2 py-1 rounded uppercase'>{props.data.status}</p>
         </div>
         <div className="text-container p-5">
@@ -22,7 +25,9 @@ export default function ProjectCard(props) {
               <p className='flex justify-center items-center gap-1'>{props.data.parkings}<FaCar /></p>
               <p className='flex justify-center items-center gap-1 whitespace-nowrap'>{props.data.sft} sft<FaRuler /></p>
             </div>
-            <button className='bg-black hover:bg-gray-800 text-white py-1 px-2 rounded'>Details</button>
+            <Link to={`/project/${props.data.id}`} key={props.data.id}>
+              <button className='bg-black hover:bg-gray-800 text-white py-1 px-2 rounded'>Details</button>
+              </Link>
           </div>
         </div>
       </div>
