@@ -1,23 +1,96 @@
 /* NAV */
-.nav-active {
-  background-color: #fff !important;
+.navbar {
+  background-color: transparent;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 24px;
+  position: fixed;
+  width: 100vw;
+  z-index: 100;
+  transition-duration: 700ms;
+}
+
+.navbar.colorChange {
+  background-color: #fff;
   color: #000;
   box-shadow: 0 25px 50px -12px rgb(0 0 0 / 0.25);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 24px;
+  position: fixed;
+  width: 100vw;
+  z-index: 100;
+  transition-duration: 700ms;
+}
+
+@media (min-width: 768px) {
+  .navbar {
+    padding: 24px 40px !important;
+  }
+  .navbar.colorChange {
+    padding: 24px 40px !important;
+  }
+}
+
+.hamburger-light{
+  background-color: white;
+  height: 2px;
+  width: 28px;
+  margin-bottom: 4px;
+  transition-duration: 700ms;
 }
 
 .hamburger-dark {
   background-color: #000 !important;
+  height: 2px;
+  width: 28px;
+  margin-bottom: 4px;
+  transition-duration: 700ms;
 }
 
-#mobile-nav {
-  right: -100%;
+.mobile-nav {
   visibility: hidden;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  right: -100%;
+  background-color: white;
+  color: black;
+  height: 100vh;
+  font-size: 1.25rem; /* 20px */
+  line-height: 1.75rem; /* 28px */
+  width: 80%;
+  transition-duration: 500ms;
+  padding: 20px;
+  box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
 }
 
 .mobile-nav-open {
-  right: 0 !important;
   visibility: visible !important;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  right: 0 !important;
+  background-color: white;
+  color: black;
+  height: 100vh;
+  font-size: 1.25rem; /* 20px */
+  line-height: 1.75rem; /* 28px */
+  width: 80%;
+  transition-duration: 500ms;
+  padding-right: 40px;
+  box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
 }
+
+/* mobile-nav px-10 flex justify-end items-center md:invisible absolute top-0 bg-white text-black text-xl h-screen w-4/5 duration-500 shadow-xl */
+
 
 /* HERO */
 .hero {
@@ -75,18 +148,6 @@
 
 .featuredCards .image:hover {
   transform: scale(1.1);
-}
-
-#exclusive1 {
-  background-image: url("./assets/featuredImages/image1.jpg");
-}
-
-#exclusive2 {
-  background-image: url("./assets/featuredImages/image2.jpg");
-}
-
-#exclusive3 {
-  background-image: url("./assets/featuredImages/image3.jpg");
 }
 
 /* SERVICES */
@@ -153,67 +214,4 @@
   background-size: cover;
   background-position: center;
 }
-#mun1main{
-  background-image: url("./assets/featuredImages/image1.jpg");
-}
-#mun11{
-  background-image: url("./assets/featuredImages/image1.jpg");
-}
-#mun12{
-  background-image: url("./assets/featuredImages/image2.jpg");
-}
-#mun13{
-  background-image: url("./assets/featuredImages/image3.jpg");
-}
-#mun14{
-  background-image: url("./assets/featuredImages/image4.jpg");
-}
 
-#dis2main{
-  background-image: url("./assets/featuredImages/image2.jpg");
-}
-#dis21{
-  background-image: url("./assets/featuredImages/image2.jpg");
-}
-#dis22{
-  background-image: url("./assets/featuredImages/image1.jpg");
-}
-#dis23{
-  background-image: url("./assets/featuredImages/image3.jpg");
-}
-#dis24{
-  background-image: url("./assets/featuredImages/image4.jpg");
-}
-
-#uni3main{
-  background-image: url("./assets/featuredImages/image5.jpg");
-}
-#uni31{
-  background-image: url("./assets/featuredImages/image5.jpg");
-}
-#uni32{
-  background-image: url("./assets/featuredImages/image2.jpg");
-}
-#uni33{
-  background-image: url("./assets/featuredImages/image3.jpg");
-}
-#uni34{
-  background-image: url("./assets/featuredImages/image4.jpg");
-}
-
-#syl4main{
-  background-image: url("./assets/featuredImages/image6.jpg");
-}
-
-#syl41{
-  background-image: url("./assets/featuredImages/image6.jpg");
-}
-#syl42{
-  background-image: url("./assets/featuredImages/image2.jpg");
-}
-#syl43{
-  background-image: url("./assets/featuredImages/image3.jpg");
-}
-#syl44{
-  background-image: url("./assets/featuredImages/image4.jpg");
-}
