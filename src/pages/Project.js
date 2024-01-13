@@ -17,7 +17,7 @@ export default function Project() {
     <div className="project flex flex-col lg:flex-row w-sceen min-h-screen">
         <h1 className='px-5 md:px-20 lg:px-40 pt-32 lg:hidden text-3xl'>{projects && projects.title}</h1>
         <p className='px-5 md:px-20 lg:px-40 mb-10 lg:hidden text-gray-600'>{projects && projects.address}</p>
-        <div className="project-info w-full lg:w-1/2 px-5 md:px-20 lg:px-40 py-12 lg:py-32 order-2 lg:order-1">
+        <div className="project-info w-full lg:w-1/2 px-5 md:px-20 lg:px-32 py-12 lg:py-32 order-2 lg:order-1">
             <h1 className='hidden lg:block mb-1 text-3xl'>{projects && projects.title}</h1>
             <p className='hidden lg:block mb-5 text-gray-600'>{projects && projects.address}</p>
             <ul className="flex flex-wrap gap-3 mb-10">
@@ -29,7 +29,7 @@ export default function Project() {
             <p className='mb-5'>Status: <span className='capitalize text-green-600 font-bold'>{projects && projects.status}</span></p>
             <p className='text-justify'>{projects && projects.description}</p>
         </div>
-        <div className="project-images w-full lg:w-1/2 pr-5 md:pr-20 lg:pr-40 py-32 order-1 lg:order-2 ">
+        <div className="project-images lg:w-1/2 px-5 py-5 lg:px-20 lg:py-32 order-1 lg:order-2 h-full">
             <ImageSlider images={projects && projects.images}/>
         </div>
     </div>
