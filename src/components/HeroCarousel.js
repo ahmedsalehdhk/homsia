@@ -20,10 +20,10 @@ const HeroCarousel = () => {
       ].style.display = "block";
     };
 
-    const interval = setInterval(showSlides, 5000); // Change image every  5 seconds
+    const interval = setInterval(showSlides, 5000);
 
     return () => {
-      clearInterval(interval); // Clear the interval when the component unmounts
+      clearInterval(interval);
     };
   }, [slideIndex]);
 

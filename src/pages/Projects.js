@@ -4,12 +4,11 @@ import { Link } from "react-router-dom";
 
 const Projects = () => {
   const {
-    data: projects,
-    isPending: isPending,
-    error: error,
+    data: projects
   } = useFetch("http://localhost:8000/projects/");
+
   if (!projects) {
-    return console.log("Projects loading");
+    return console.log("Loading Projects");
   }
 
   return (

@@ -7,9 +7,7 @@ import ImageSlider from '../components/ImageSlider';
 export default function Project() {
     const { id } = useParams();
     const {
-        data: projects,
-        error,
-        isPending,
+        data: projects
     } = useFetch("http://localhost:8000/projects/" + id);
 
   return (

@@ -17,9 +17,7 @@ import useFetch from "../hooks/useFetch";
 
 const Home = () => {
   const {
-    data: projects,
-    // isPending,
-    // error,
+    data: projects
   } = useFetch("http://localhost:8000/projects");
 
   return (
@@ -46,6 +44,8 @@ const Home = () => {
               projects.map((project, index) => {
                 if (project.featured === true) {
                   return <ProjectCard data={project} key={index} />;
+                } else{
+                  return null
                 }
               })}
           </div>

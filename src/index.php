@@ -3,7 +3,6 @@ header("Access-Control-Allow-Origin: *");
 use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\Exception;
 
-
 // get refferer server
 if($_SERVER['HTTP_REFERER'] === "http://localhost:3000/"){
     // extract the data from $_POST
