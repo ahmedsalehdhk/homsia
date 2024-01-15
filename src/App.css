@@ -89,9 +89,6 @@
   box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
 }
 
-/* mobile-nav px-10 flex justify-end items-center md:invisible absolute top-0 bg-white text-black text-xl h-screen w-4/5 duration-500 shadow-xl */
-
-
 /* HERO */
 .hero {
   background-size: cover;
@@ -117,7 +114,7 @@
 }
 
 #hc2 {
-  background-image: url("./assets/heroImages/creative1.webp");
+  background-image: url("./assets/heroImages/creative.jpg");
 }
 
 #hc3 {
@@ -197,15 +194,12 @@
 }
 
 /* ALL CARD IMAGES */
-
 .image, .project-img {
   background-size: cover;
   background-position: center;
   transition: all ease-in-out 0.3s;
 }
-.projects-inforight{
-  /* background-color: blanchedalmond; */
-}
+
 .image:hover{
   transform: scale(1.1);
 }

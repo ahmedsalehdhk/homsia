@@ -54,7 +54,10 @@ const Contact = () => {
   });
 
   return (
-    <div className="contact h-screen w-screen overflow-y-hidden md:bg-fixed" id="contact">
+    <div
+      className="contact h-screen w-screen overflow-y-hidden md:bg-fixed"
+      id="contact"
+    >
       <div className="contact_overlay bg-black/40 h-full w-full flex flex-col lg:flex-row">
         <div className="contact_left flex justify-center items-center lg:w-1/2">
           <h1 className="text-white text-3xl lg:text-5xl text-center font-medium lg:whitespace-nowrap px-5 md:px-20 lg:px-40 py-20 font-merriweather">
@@ -93,9 +96,7 @@ const Contact = () => {
                 name="email"
                 required
               />
-              <h1 className="text-black text-xl">
-                Your Message
-              </h1>
+              <h1 className="text-black text-xl">Your Message</h1>
               <textarea
                 className="w-full p-3 rounded resize-none mb-5"
                 name="message"
