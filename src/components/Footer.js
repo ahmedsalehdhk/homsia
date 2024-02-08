@@ -27,7 +27,7 @@ const Footer = () => {
             <a href="tel:01717732465"><p className="cursor-pointer text-gray-500 w-fit hover:text-gray-300">01717732465</p></a>
             <a href="tel:01678175401"><p className="cursor-pointer text-gray-500 w-fit hover:text-gray-300">01678175401</p></a>
           </div>
-          <p className="cursor-pointer text-gray-500 w-fit hover:text-gray-300">help@homsia.com FIX ME</p>
+          <p className="cursor-pointer text-gray-500 w-fit hover:text-gray-300">help@example.com</p>
           <p className="cursor-pointer text-gray-500 w-fit hover:text-gray-300">A3, House 109, Mosjid Road, Banani DOHS, Dhaka</p>
         </div>
       </div>

@@ -12,7 +12,7 @@ export default function Project() {
 
   return (
     <>
-    <div className="project flex flex-col lg:flex-row w-sceen min-h-screen">
+    <div className="project flex flex-col lg:flex-row items-center w-sceen min-h-screen">
         <h1 className='px-5 md:px-20 lg:px-40 pt-32 lg:hidden text-3xl'>{projects && projects.title}</h1>
         <p className='px-5 md:px-20 lg:px-40 mb-10 lg:hidden text-gray-600'>{projects && projects.address}</p>
         <div className="project-info w-full lg:w-1/2 px-5 md:px-20 lg:px-32 py-12 lg:py-32 order-2 lg:order-1">
