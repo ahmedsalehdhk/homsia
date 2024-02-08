@@ -1,0 +1,18 @@
+{
+  "files": {
+    "main.css": "/static/css/main.89165be4.css",
+    "main.js": "/static/js/main.d1c420b4.js",
+    "static/media/agency.webp": "/static/media/agency.3cc10dcd2b3e19882e45.webp",
+    "static/media/contactBg.webp": "/static/media/contactBg.aff29b838150286905f0.webp",
+    "static/media/Homsia.png": "/static/media/Homsia.d9bf61394fa4bb2bfe3e.png",
+    "static/media/Hero1.webp": "/static/media/Hero1.f402190090233948566a.webp",
+    "static/media/creative.jpg": "/static/media/creative.7965d78ab76315276680.jpg",
+    "index.html": "/index.html",
+    "main.89165be4.css.map": "/static/css/main.89165be4.css.map",
+    "main.d1c420b4.js.map": "/static/js/main.d1c420b4.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.89165be4.css",
+    "static/js/main.d1c420b4.js"
+  ]
+}

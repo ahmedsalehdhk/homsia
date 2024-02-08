@@ -1,5 +1,6 @@
 {
   "name": "homesiaweb",
+  "homepage": "https://homsia.org/",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
